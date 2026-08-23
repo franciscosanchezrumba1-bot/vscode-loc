@@ -116,10 +116,10 @@ foreach ($pack in $languagePacks) {
     }
   ```
 
-- **Package.json integrity**: Validate `package.json` has correct structure
+- **Package.json dependency validation**: Validate npm dependency tree (does **not** check extension manifest fields such as `publisher`, `engines`, or `contributes`)
   ```powershell
   cd ./i18n/vscode-language-pack-fr
-  npm ls  # Validate dependencies and structure
+  npm ls  # Validates npm dependency tree only
   ```
 
 ### Build Validation
