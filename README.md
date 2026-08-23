@@ -10,20 +10,20 @@ There are currently 14 supported languages for Visual Studio Code.
 
 |Language|Visual Studio Code Language ID|MLCP Language Code|
 |--------|--------|--------|
-|**French**|fr|French (fr-fr)
-|**Italian**|it|Italian (it-it)
-|**German**|de|German (de-de)
-|**Spanish**|es|Spanish (es-es)
-|**Russian**|ru|Russian (ru-ru)
-|**Chinese (Simplified)**|zh-cn|Chinese Simplified (zh-cn)
-|**Chinese (Traditional)**|zh-tw|Chinese Traditional (zh-tw)
-|**Japanese**|ja|Japanese (ja-jp)
-|**Korean**|ko|Korean (ko-kr)
-|**Czech**|cs|Czech (cs-CZ)
-|**Portuguese (Brazil)**|pt-br|Portuguese (Brazil) (pt-br)
-|**Turkish**|tr|Turkish (tr-tr)
-|**Polish**|pl|Polish (pl-pl)
-|**Pseudo Language**|qps-ploc|Pseudo (qps-ploc)
+|**French**|fr|French (fr-fr)|
+|**Italian**|it|Italian (it-it)|
+|**German**|de|German (de-de)|
+|**Spanish**|es|Spanish (es-es)|
+|**Russian**|ru|Russian (ru-ru)|
+|**Chinese (Simplified)**|zh-cn|Chinese Simplified (zh-cn)|
+|**Chinese (Traditional)**|zh-tw|Chinese Traditional (zh-tw)|
+|**Japanese**|ja|Japanese (ja-jp)|
+|**Korean**|ko|Korean (ko-kr)|
+|**Czech**|cs|Czech (cs-CZ)|
+|**Portuguese (Brazil)**|pt-br|Portuguese (Brazil) (pt-br)|
+|**Turkish**|tr|Turkish (tr-tr)|
+|**Polish**|pl|Polish (pl-pl)|
+|**Pseudo Language**|qps-ploc|Pseudo (qps-ploc)|
 
 ## Contributing
 

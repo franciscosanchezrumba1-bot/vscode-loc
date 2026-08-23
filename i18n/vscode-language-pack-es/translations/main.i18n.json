@@ -7214,8 +7214,8 @@
 			"autoApprove2.button.enable": "Habilitar",
 			"autoApprove2.markdown": "La aprobación automática global también conocida como \"modo YOLO\" deshabilita completamente la aprobación manual para _todas las herramientas de todas las áreas de trabajo_, lo que permite que el agente actúe de forma totalmente autónoma. Esto es extremadamente peligroso y *nunca* se recomienda, incluso los entornos en contenedores como [Codespaces](https://github.com/features/codespaces) y [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) tienen claves de usuario reenviadas al contenedor que podrían estar en peligro.\r\n\r\n**Esta característica deshabilita [protecciones de seguridad críticas](https://code.visualstudio.com/docs/copilot/security) y facilita mucho a un atacante poner en peligro la máquina.**",
 			"autoApprove2.title": "¿Habilitar la aprobación automática global?",
-			"copilot.toolSet.launch.description": "Launch and run code, binaries or tests in the workspace",
-			"copilot.toolSet.vscode.description": "Use VS Code features",
+			"copilot.toolSet.launch.description": "Inicie y ejecute código, binarios o pruebas en el área de trabajo",
+			"copilot.toolSet.vscode.description": "Usar funciones de VS Code",
 			"defaultToolConfirmation.disclaimer": "La aprobación automática de ''{0}'' está restringida a través de {1}.",
 			"defaultToolConfirmation.message": "¿Ejecutar la herramienta '{0}'?",
 			"defaultToolConfirmation.title": "¿Permitir que se ejecute la herramienta?"
