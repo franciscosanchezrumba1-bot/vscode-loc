@@ -182,6 +182,13 @@ foreach ($pack in $languagePacks) {
   npm install  # Creates new lock
   ```
 
+### Change Workflow Validation (Tested)
+✅ File edits via copilot tools work correctly  
+✅ Git staging/tracking functions properly  
+✅ Changes can be committed and reverted cleanly  
+✅ Working directory status is tracked accurately  
+⚠️ Note: Full build validation requires Node.js (not available in current environment)
+
 ---
 
 ## CI Pipeline & Release Flow
