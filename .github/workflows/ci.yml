@@ -25,7 +25,7 @@ jobs:
         run: |
           # Discover pack directories so newly added packs are built without updating this workflow.
           $obj = @{
-            languagePack = Get-ChildItem i18n | ForEach-Object Name
+            languagePack = Get-ChildItem i18n -Directory -Filter 'vscode-language-pack-*' | ForEach-Object Name
           }
           "matrix=$($obj | ConvertTo-Json -Depth 100 -Compress)" >> $env:GITHUB_OUTPUT
         shell: pwsh

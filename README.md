@@ -31,7 +31,7 @@ This repository currently contains 14 Language Packs for Visual Studio Code.
 
 Each `i18n/vscode-language-pack-*` directory is an independently packaged VS Code extension. Its `package.json` declares the supported VS Code version and the translation resources contributed by the package.
 
-GitHub Actions packages every Language Pack on pushes and pull requests to `main`. The release pipeline publishes a selected pack on its weekly schedule or when manually configured with the `languagePack` pipeline variable. Translation resources are generated and synchronized by the localization workflow; do not edit them directly.
+GitHub Actions packages every Language Pack on pushes and pull requests to `main`. The release pipeline publishes a selected pack on its weekly schedule or when manually configured with the `languagePack` pipeline variable. Translation resources are machine-generated exports from the Microsoft Localization Platform; do not edit them directly.
 
 ## Contributing
 
