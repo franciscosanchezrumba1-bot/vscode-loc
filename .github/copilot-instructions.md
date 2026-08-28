@@ -15,7 +15,7 @@
 
 **Key Characteristics**:
 - 14 independent language pack extensions under `/i18n/`
-- Each pack: `package.json`, translation JSON files, `yarn.lock` file
+- Each pack contains a `package.json` and translation JSON files
 - Managed translations (exported from Microsoft Localization Platform)
 - Matrix-based CI/CD that builds all packs in parallel
 - Minimal dependencies; mainly uses `@vscode/vsce` CLI tool for packaging
@@ -41,7 +41,6 @@ vscode-loc/
 ├── i18n/                          # Language packs (14 directories)
 │   ├── vscode-language-pack-fr/
 │   │   ├── package.json          # Extension metadata + scripts
-│   │   ├── yarn.lock             # Dependency lock (each pack has its own)
 │   │   └── translations/          # i18n JSON files organized by scope
 │   │       ├── main.i18n.json    # VSCode core translations
 │   │       └── extensions/        # Per-extension translations
@@ -172,16 +171,6 @@ foreach ($pack in $languagePacks) {
   Get-Content ./i18n/vscode-language-pack-fr/translations/main.i18n.json | ConvertFrom-Json
   ```
 
-### Failure: `yarn.lock` conflicts on merge
-- **Symptom**: Merge conflicts in yarn.lock files
-- **Cause**: Multiple branches updated different packs
-- **Fix**: Regenerate lock file:
-  ```powershell
-  cd ./i18n/vscode-language-pack-fr
-  rm yarn.lock
-  npm install  # Creates new lock
-  ```
-
 ### Change Workflow Validation (Tested)
 ✅ File edits via copilot tools work correctly  
 ✅ Git staging/tracking functions properly  
@@ -233,8 +222,8 @@ foreach ($pack in $languagePacks) {
 
 ### Updating Tool Dependencies
 1. Edit `package.json` in the target pack (or root if shared)
-2. Run `npm install` to update `yarn.lock`
-3. Commit both `package.json` and `yarn.lock`
+2. Run `npm install` in the target pack
+3. If that pack already tracks a lockfile, commit the updated lockfile with `package.json`
 4. CI will validate the updated dependencies
 
 ### Adding a New Language Pack
